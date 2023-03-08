@@ -17,9 +17,10 @@
     float: left;
     margin-left: 0;
     border-color: #cbced0;
+    cursor: pointer;
 }
 
 .checkbox_table .form-check label {
     float: left;
-    margin-left: 6px;
+    margin-left: 10px;
 }

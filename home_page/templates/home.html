@@ -8,6 +8,7 @@
 {% load static %}
 
 <script src="{% static 'js/department.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/checkbox.js' %}" type="text/javascript"></script>
 
 <div class="container d-flex justify-content-center" style="margin-top: 10vh; margin-bottom: 10vh;">
 	<div class="col-10 col-md-8">
@@ -97,19 +98,19 @@
 										<tr>
 											<td>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+													<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="Note Book" onclick="checkbox_clicked(this);">
 													<label class="form-check-label" for="gender_male">Note Book</label>
 												</div>
 											</td>
 											<td>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+													<input class="form-check-input" type="checkbox" name="materials" id="materials_pen" value="Pen" onclick="checkbox_clicked(this);">
 													<label class="form-check-label" for="gender_male">Pen</label>
 												</div>
 											</td>
 											<td>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+													<input class="form-check-input" type="checkbox" name="materials" id="materials_pencil" value="Pencil" onclick="checkbox_clicked(this);">
 													<label class="form-check-label" for="gender_male">Pencil</label>
 												</div>
 											</td>
@@ -117,19 +118,19 @@
 										<tr>
 											<td>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+													<input class="form-check-input" type="checkbox" name="materials" id="materials_eraser" value="Eraser" onclick="checkbox_clicked(this);">
 													<label class="form-check-label" for="gender_male">Eraser</label>
 												</div>
 											</td>
 											<td>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+													<input class="form-check-input" type="checkbox" name="materials" id="materials_scale" value="Scale" onclick="checkbox_clicked(this);">
 													<label class="form-check-label" for="gender_male">Scale</label>
 												</div>
 											</td>
 											<td>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+													<input class="form-check-input" type="checkbox" name="materials" id="materials_text_book" value="Text Book" onclick="checkbox_clicked(this);">
 													<label class="form-check-label" for="gender_male">Text Book</label>
 												</div>
 											</td>
@@ -137,19 +138,19 @@
 										<tr>
 											<td>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+													<input class="form-check-input" type="checkbox" name="materials" id="materials_lab_coat" value="Lab Coat" onclick="checkbox_clicked(this);">
 													<label class="form-check-label" for="gender_male">Lab Coat</label>
 												</div>
 											</td>
 											<td>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+													<input class="form-check-input" type="checkbox" name="materials" id="materials_paper" value="Paper" onclick="checkbox_clicked(this);">
 													<label class="form-check-label" for="gender_male">Paper</label>
 												</div>
 											</td>
 											<td>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+													<input class="form-check-input" type="checkbox" name="materials" id="materials_marker" value="Marker" onclick="checkbox_clicked(this);">
 													<label class="form-check-label" for="gender_male">Marker</label>
 												</div>
 											</td>
