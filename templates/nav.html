@@ -1,6 +1,6 @@
 <nav class="navbar bg-dark navbar-expand-lg sticky-top" data-bs-theme="dark">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="{% url 'home_page:home' %}">School-Store</a>
+		<a class="navbar-brand" href="{% url 'home_page:home' %}">College-Store</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -12,11 +12,11 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Department</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Science">Science</a></li>
-						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Information_technology">Information Technology</a></li>
-						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Social_science">Social Science</a></li>
-						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Commerce">Commerce</a></li>
-						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Physical_education">Physical Education</a></li>
+						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Computer_science_and_engineering">Computer Science and Engineering</a></li>
+						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Chemical_engineering">Chemical engineering</a></li>
+						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Electrical_engineering">Electrical Engineering</a></li>
+						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Mechanical_engineering">Mechanical Engineering</a></li>
+						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Civil_engineering">Civil Engineering</a></li>
 					</ul>
 				</li>
 				{% if user.is_authenticated %}

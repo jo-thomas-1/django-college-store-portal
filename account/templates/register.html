@@ -3,9 +3,20 @@
 {% block title %} Register {% endblock %}
 
 {% block body %}
-<div class="container d-flex justify-content-center" style="margin-top: 10vh;">
+<div class="container d-flex justify-content-center" style="margin-top: 6vh;">
 	<div class="col-10 col-md-8">
-		<div class="card text-center shadow p-2">
+		<div>
+			{% for message in messages %}
+			<div class="alert alert-dismissible fade show" role="alert">
+				{{ message }}
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+			<script type="text/javascript">
+				document.currentScript.previousElementSibling.classList.add(message_tags['{{ message.tags }}']);
+			</script>
+			{% endfor %}
+		</div>
+		<div class="card text-center shadow p-2 mb-2">
 			<div class="card-body">
 				<h5 class="card-title mb-4">Account Registration</h5>
 				<form method="POST" action="#">
@@ -48,17 +59,6 @@
 					<p>Already have an account? <a href="{% url 'account:login' %}">Click here</a> to login.</p>
 				</div>
 			</div>
-		</div>
-		<div>
-			{% for message in messages %}
-			<div class="alert alert-dismissible fade show" role="alert">
-				{{ message }}
-				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-			</div>
-			<script type="text/javascript">
-				document.currentScript.previousElementSibling.classList.add(message_tags['{{ message.tags }}']);
-			</script>
-			{% endfor %}
 		</div>
 	</div>
 </div>

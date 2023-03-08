@@ -2,7 +2,7 @@
 
 A basic school store portal application.
 
-Create a website for a school store.
+Create a website for a College store.
 
 You can create your own template or download from the internet.
 

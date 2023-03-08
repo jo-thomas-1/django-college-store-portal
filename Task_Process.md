@@ -33,3 +33,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 - impliment messages system to provide alerts to user
 - impliment js code to generate bootstrap alerts for all message elements
+
+- perform design updates as required
