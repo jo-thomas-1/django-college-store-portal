@@ -3,18 +3,23 @@
     right: 0;
 }
 
-.checkbox_table .form-check {
-    border: 1px solid #959da3;
-    padding: 4px;
+.checkbox_table {
+    border-collapse: separate;
+    border-spacing: 6px;
+}
+
+.checkbox_table td {
+    border: 1px solid #cbced0;
     border-radius: 6px;
-    margin: 1px;
 }
 
-.checkbox_table .form-check-input {
-    border-color: #94989c;
+.form-check .form-check-input {
+    float: left;
+    margin-left: 0;
+    border-color: #cbced0;
 }
 
-.checkbox_table .form-check .form-check-input {
-    float: none;
-    margin-right: 4px;
+.form-check label {
+    float: left;
+    margin-left: 6px;
 }
