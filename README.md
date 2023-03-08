@@ -1,4 +1,4 @@
-# -- Test Task --
+# -- College Store Portal --
 
 A basic school store portal application.
 
