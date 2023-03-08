@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+{% if user.is_authenticated %}
+<div class="container d-flex justify-content-center" style="margin-top: 10vh; margin-bottom: 10vh;">
+	<div class="col-10 col-md-8">
+		<div class="card text-center shadow p-2">
+			<div class="card-body">
+				<h5 class="card-title mb-4">Store Form</h5>
+				<form method="POST" action="{% url 'home_page:status' %}">
+					{% csrf_token %}
+					<div class="row mb-2 justify-content-center">
+						<div class="col">
+							<input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" title="First Name" required>
+						</div>
+						<div class="col">
+							<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" title="Last Name" required>
+						</div>
+					</div>
+					<div class="row mb-2 justify-content-center">
+						<div class="col">
+							<input type="date" class="form-control" id="date_of_birth" name="date_of_birth" placeholder="Date of Birth" title="Date of Birth" required>
+						</div>
+						<div class="col">
+							<input type="number" min="5" max="20" class="form-control" id="age" name="age" placeholder="Age" title="Age" required>
+						</div>
+					</div>
+					<div class="row mb-2">
+						<div class="col-6">
+							<div class="form-check form-check-inline">Gender: </div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="gender" id="gender_male" value="male">
+								<label class="form-check-label" for="gender_male">Male</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="gender" id="gender_female" value="female">
+								<label class="form-check-label" for="gender_female">Female</label>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-2 justify-content-center">
+						<div class="col">
+							<input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" title="Phone" required>
+						</div>
+						<div class="col">
+							<input type="email" class="form-control" id="email" name="email" placeholder="Email" title="Email" required>
+						</div>
+					</div>
+					<div class="row mb-2 justify-content-center">
+						<div class="col">
+							<textarea class="form-control" id="address" name="address" rows="3" title="address" placeholder="Address" required></textarea>
+						</div>
+					</div>
+					<div class="row mb-2 justify-content-center">
+						<div class="col">
+							<select class="form-select" aria-label="department" placeholder="Department" title="Department" required>
+								<option selected disabled value="">-- Department --</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+						<div class="col">
+							<select class="form-select" aria-label="course" placeholder="Course" title="Course" required>
+								<option selected disabled value="">-- Course --</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+					<div class="row mb-2 justify-content-center">
+						<div class="col">
+							<select class="form-select" aria-label="purpose" placeholder="Purpose" title="Purpose" required>
+								<option selected disabled value="">-- Purpose --</option>
+								<option value="1">Enquiry</option>
+								<option value="2">Order</option>
+								<option value="3">Return</option>
+							</select>
+						</div>
+					</div>
+					<div class="row mb-2">
+						<div class="col">
+							<div class="row mb-1">
+								<div class="col">
+									<b>Materials:</b>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<table class="col-10 checkbox_table">
+									<tr>
+										<td>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+												<label class="form-check-label" for="gender_male">Note Book</label>
+											</div>
+										</td>
+										<td>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+												<label class="form-check-label" for="gender_male">Note Book</label>
+											</div>
+										</td>
+										<td>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+												<label class="form-check-label" for="gender_male">Note Book</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+												<label class="form-check-label" for="gender_male">Note Book</label>
+											</div>
+										</td>
+										<td>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+												<label class="form-check-label" for="gender_male">Note Book</label>
+											</div>
+										</td>
+										<td>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+												<label class="form-check-label" for="gender_male">Note Book</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+												<label class="form-check-label" for="gender_male">Note Book</label>
+											</div>
+										</td>
+										<td>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+												<label class="form-check-label" for="gender_male">Note Book</label>
+											</div>
+										</td>
+										<td>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="materials" id="materials_note_book" value="note_book">
+												<label class="form-check-label" for="gender_male">Note Book</label>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3 mb-0 justify-content-center">
+						<div class="col">
+							<input class="btn btn-primary col-8" type="submit" value="Submit">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div>
+			{% for message in messages %}
+			<div class="alert alert-dismissible fade show" role="alert">
+				{{ message }}
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+			<script type="text/javascript">
+				document.currentScript.previousElementSibling.classList.add(message_tags['{{ message.tags }}']);
+			</script>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% else %}
+<div class="container d-flex justify-content-center" style="margin-top: 24vh;">
+	<div class="col-10 col-md-6">
+		<div class="card text-center shadow p-2">
+			<div class="card-body">
+				<h5 class="card-title">School Store</h5>
+				<p class="card-text">Click button to login to your account.</p>
+				<a href="{% url 'account:login' %}" class="btn btn-primary col-6">Login</a>
+			</div>
+			<div>
+				<p><a href="{% url 'account:register' %}">Register Now</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
+{% endblock %}

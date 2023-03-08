@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} Status {% endblock %}
+
+{% block body %}
+<div class="container d-flex justify-content-center" style="margin-top: 24vh;">
+	<div class="col-10 col-md-6">
+		<div class="card text-center shadow p-2">
+			<div class="card-body">
+				<h5 class="card-title">Order Status</h5>
+				<p class="card-text">Your order has been confirmed.</p>
+				<a href="{% url 'home_page:home' %}" class="btn btn-primary col-6">Return to home page</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

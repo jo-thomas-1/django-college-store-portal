@@ -1,0 +1,40 @@
+<nav class="navbar bg-dark navbar-expand-lg sticky-top" data-bs-theme="dark">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="{% url 'home_page:home' %}">School-Store</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+			<ul class="navbar-nav justify-content-end mb-2 mb-lg-0 mr-lg-2">
+				<li class="nav-item">
+					<a class="nav-link {% if home %}active{% endif %}" aria-current="page" href="{% url 'home_page:home' %}">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Department</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Science">Science</a></li>
+						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Information_technology">Information Technology</a></li>
+						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Social_science">Social Science</a></li>
+						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Commerce">Commerce</a></li>
+						<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Physical_education">Physical Education</a></li>
+					</ul>
+				</li>
+				{% if user.is_authenticated %}
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="{% url 'home_page:home' %}">Hi {{ user.username }} !</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'account:logout' %}">Logout</a>
+				</li>
+				{% else %}
+				<li class="nav-item">
+					<a class="nav-link {% if login %}active{% endif %}" href="{% url 'account:login' %}">Login</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link {% if register %}active{% endif %}" href="{% url 'account:register' %}">Register</a>
+				</li>
+				{% endif %}
+			</ul>
+		</div>
+	</div>
+</nav>

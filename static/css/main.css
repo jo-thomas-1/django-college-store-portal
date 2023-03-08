@@ -1,0 +1,20 @@
+.dropdown-menu[data-bs-popper] {
+    left: auto;
+    right: 0;
+}
+
+.checkbox_table .form-check {
+    border: 1px solid #959da3;
+    padding: 4px;
+    border-radius: 6px;
+    margin: 1px;
+}
+
+.checkbox_table .form-check-input {
+    border-color: #94989c;
+}
+
+.checkbox_table .form-check .form-check-input {
+    float: none;
+    margin-right: 4px;
+}

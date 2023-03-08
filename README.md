@@ -15,7 +15,7 @@ You can create your own template or download from the internet.
 	- register
 	- department
 - Department should be a dropdown which contains minimum 5 department (eg: computer science, commerce, etc.)
-- When clicked on any depart in the dropdown it should redirect to its corresponding Wikipedia page
+- When clicked on any department in the dropdown it should redirect to its corresponding Wikipedia page
 - Home page should contain a button
 - When clicked on the button the login page should appear
 
@@ -54,9 +54,8 @@ You can create your own template or download from the internet.
 	- Department (it should be in dropdown)
 	- Courses (it should be a dropdown dependant on the Department field. if a department is selected in the above dropdown, related subjects must be displayed in this dropdown. for example if commerce is selected then the course drop down should contain its subjects like BBA, BCom etc.
 	- purpose (it should be a drop down. eg: For Enquiry, Place Order, Return, etc.)
-	- Materials (should use checkbox type input. eg: debit Note Book, Pen, exam peppers etc.)
+	- Materials (should use checkbox type input. eg: debit Note Book, Pen, exam pappers etc.)
 	- Submit
 	- logout button
 - When clicked on submit button it should pass a message (eg: Order Confirmed) 
-- Below the message there should be a link for returning to the home page 
- 
+- Below the message there should be a link for returning to the home page
